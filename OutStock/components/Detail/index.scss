@@ -1,0 +1,179 @@
+.detailContents{
+  color: #0e264a;
+  .panel {
+    background-color: #fff;
+    padding: 10px 15px;
+  }
+
+  .panel + .panel {
+    margin-top: 30px;
+  }
+
+  .title {
+    color: #F4931F;
+    font-size: 18px;
+    padding: 10px 0 4px 0;
+  }
+
+  .nameWrap {
+    margin-top: 20px;
+    padding: 10px;
+    border-top: 1px solid #eee;
+    display: flex;
+    align-items: center;
+    flex: 1;
+    .tip {
+      padding-bottom: 4px;
+      color: #999;
+      font-size: 12px;
+    }
+  }
+
+  .itemWrap {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    border-top: 1px solid #eee;
+    padding: 0 10px;
+     .item {
+      min-height: 40px;
+      padding: 10px 0;
+      border-bottom: 1px solid #eee;
+      width: 50%;
+      display: flex;
+      align-items: center;
+      .tip {
+        padding-bottom: 4px;
+        color: #999;
+        font-size: 12px;
+      }
+    }
+  }
+
+  .orderWrap {
+    padding: 10px 10px 0 10px;
+    .label {
+      color: #999;
+      font-size: 14px;
+    }
+    .orderNum {
+      display: flex;
+      align-items: center;
+       .value {
+        padding-top: 3px;
+        .placeholder {
+          color: #999;
+        }
+        .input {
+          border: none;
+          padding: 1px 0;
+          font-size: 24px;
+          color: #fe473c;
+          outline:medium;
+        }
+      }
+      .full {
+        flex: 1;
+        text-align: right;
+      }
+    }
+  }
+
+  ::-webkit-input-placeholder {
+    color: #999;
+    font-size: 14px;
+  }
+  ::-moz-placeholder {
+   color: #999;
+   font-size: 14px;
+  }
+  :-ms-input-placeholder {
+   color: #999;
+   font-size: 14px;
+  }
+  :-moz-placeholder {
+   color: #999;
+   font-size: 14px;
+  }
+
+  .f14 {
+    font-size: 14px;
+  }
+
+  .ml5 {margin-left: 5px;}
+
+  .borNone {
+    border: 0!important;
+  }
+
+  .bottom {
+    width: 100%;
+    margin-top: 10px;
+    padding: 8px 0;
+    display: flex;
+    align-items: center;
+  }
+
+  .btn {
+    outline: none;
+    position: relative;
+    height: 40px;
+    padding: 0 5px;
+    width: 100%;
+    margin: 0 15px;
+    line-height: 40px;
+    text-align: center;
+    font-size: 14px;
+    color: #fff;
+    z-index: 2;
+    border-radius: 5px;
+    border: 0;
+    &::after {
+      border: 0;
+    }
+  }
+
+  .notBtn {
+    background-color: #dadada ;
+  }
+
+  .submitBtn {
+    background-color: #ef4142 ;
+  }
+
+  .f14 {
+    font-size: 14px;
+  }
+  
+  .widthFull {width: 100%!important;}
+}
+
+.noData {
+  text-align: center;
+  margin: 5px 10px;
+  border-radius: 6px;
+  padding: 40% 0;
+  color: #90959A;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  .nodataTips {
+    margin: 5px;
+  }
+  .nodataBtn {
+    margin-top: 10px;
+    color: #fe473c;
+    text-align: center;
+    .saveBtn {
+      border: 1px solid;
+      border-radius: 100px;
+      width: 80px;
+      padding: 5px;
+      text-align: center;
+      color: #ffffff;
+      background: #ef4142;
+      outline: none;
+    }
+  }
+}

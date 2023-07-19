@@ -1,0 +1,85 @@
+body {
+  overflow: auto;
+}
+.contents{
+  padding-bottom: 60px;
+  color: #0e264a;
+  background-color: #f4f4f4; 
+  overflow: hidden;
+  -webkit-overflow-scrolling: touch;
+  .panel + .panel {
+    margin-top: 30px;
+  }
+  .bottom {
+    width: 100%;
+    position: fixed;
+    bottom: 0;
+    right: 0;
+    height: 3.5em;
+    line-height: 3.5em;
+    .absolute {
+      border-top: 1px solid #eee;
+      background-color: #fff;
+      width: 100%;
+      display: flex;
+      align-items: center;
+      position: absolute;
+      bottom: 0;
+      right: 0;
+      .bottomLeft {
+        padding-left: 15px;
+        .checkBox {
+          img {
+            width: 18px;
+            height: 18px;   
+          }
+          display: inline-block;
+          vertical-align: middle;
+        }
+      }
+      .bottomRight{
+        flex: 1;
+        text-align: right;
+        .btn {
+          outline: none;
+          position: relative;
+          height: 40px;
+          width: 90px;
+          margin: 0 10px;
+          line-height: 40px;
+          text-align: center;
+          font-size: 14px;
+          color: #fff;
+          z-index: 2;
+          border-radius: 100px;
+          border: 0;
+          &::after {
+            border: 0;
+          }
+        }
+        .submitBtn {
+          background-color: #ef4142;
+        }
+        .noBtn {
+          background-color: #dadada;
+        }
+      }
+    }
+  }
+  .checkTips {
+     
+    position: relative;
+    display: flex;
+    align-items: center;
+    .label {
+      flex: 3!important;
+    }
+    .full {
+      flex: 1;
+      text-align: right;
+    }
+  }
+  .noBorder {
+    border: none;
+  }
+}
